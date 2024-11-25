@@ -1,80 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visor de Fichas Cementerio Urubamba</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Sitio en Mantenimiento</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+        .mensaje {
+            max-width: 600px;
+        }
+        .mensaje h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .mensaje p {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Contenedor principal -->
-    <div class="container my-5">
-        <h1 class="text-center mb-4">Visor de Fichas Cementerio General de Urubamba</h1>
-
-        <!-- Formulario de Búsqueda Avanzada -->
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card p-4">
-                    <h5 class="card-title text-center">Búsqueda de Fichas</h5>
-
-                    <!-- Selección de Tipo de Nicho -->
-                    <div class="mb-3">
-                        <label for="tipoNicho" class="form-label">Tipo de Nicho</label>
-                        <select id="tipoNicho" class="form-select">
-                            <option value="">Seleccione un tipo de nicho</option>
-                            <option value="municipalidad">Nicho de la Municipalidad</option>
-                            <option value="particular">Nicho Particular</option>
-                        </select>
-                    </div>
-
-                    <!-- Selección de Sección (solo para Nicho de la Municipalidad) -->
-                    <div class="mb-3" id="seccionMunicipalidadContainer" style="display: none;">
-                        <label for="seccionMunicipalidad" class="form-label">Sección</label>
-                        <select id="seccionMunicipalidad" class="form-select">
-                            <option value="">Seleccione una sección</option>
-                            <option value="los_angeles">Los Ángeles</option>
-                            <option value="golgota">Gólgota</option>
-                            <option value="san_pedro">San Pedro</option>
-                        </select>
-                    </div>
-
-                    <!-- Input de Nombre para Nicho Particular -->
-                    <div class="mb-3" id="nombreParticularContainer" style="display: none;">
-                        <label for="nombreParticular" class="form-label">Nombre de la Ficha</label>
-                        <input type="text" id="nombreParticular" class="form-control"
-                            placeholder="Ingresa el nombre de la ficha (y-01)">
-                    </div>
-
-                    <button id="buscarBtn" class="btn btn-primary w-100 mt-3">
-                        <i class="bi bi-search"></i> Buscar Ficha
-                    </button>
-
-                    <!-- Botón para abrir el visor en una nueva pestaña -->
-                    <a href="visor/index.html" target="_blank" class="btn btn-secondary w-100 mt-3">
-                        <i class="bi bi-box-arrow-up-right"></i> Abrir Visor en Nueva Pestaña
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Visor de PDF -->
-        <div id="visorPdf" class="mt-4">
-            <!-- Aquí se mostrará el PDF -->
-        </div>
+    <div class="mensaje">
+        <h1>Sitio en Mantenimiento</h1>
+        <p>Estamos realizando algunas mejoras. Volveremos pronto.</p>
     </div>
-
-    <!-- Pie de página -->
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 Municipalidad de Urubamba - Departamento de Cementerio</p>
-    </footer>
-
-    <!-- Enlace a los scripts de Bootstrap y app.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="js/app.js"></script>
-
 </body>
-
 </html>
